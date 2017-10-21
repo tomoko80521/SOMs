@@ -70,7 +70,7 @@ begin
    nyrs=eyr-byr
  end if
  
- if (more .eq. "no")
+ if (more .eq. "no" .and. iday .le. 0)
    nyrs=nyrs-1
  end if
 
